@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEAD 2026 | Prof. Miguel Camacaro Pérez</title>
+  <meta name="description" content="Participação oficial do Prof. Eng. Miguel Camacaro Pérez na III Conferência de Engenharia de Avaliações e Diagnóstica (CEAD 2026) em Recife, Brasil.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --bg-dark: #070c18;
+      --bg-card: #0f172a;
+      --border-card: rgba(255, 255, 255, 0.12);
+      --royal-blue: #0070ba;
+      --accent-red: #991b1b;
+      --accent-red-hover: #b91c1c;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --font-title: 'Cinzel', serif;
+      --font-reading: 'Literata', Georgia, serif;
+      --font-ui: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background-image: linear-gradient(rgba(7, 12, 24, 0.92), rgba(7, 12, 24, 0.98)), url('image_2360ec.png');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: var(--font-ui);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    details > summary { list-style: none; outline: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] summary ~ * { animation: slideDown 0.3s ease-in-out; }
+    @keyframes slideDown {
+        0% { opacity: 0; transform: translateY(-10px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    details[open] summary .icono-flecha { transform: rotate(180deg); }
+    
+    .no-select { user-select: none; -webkit-user-select: none; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #1e293b; }
+    ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+  </style>
+</head>
+<body class="text-slate-200 antialiased min-h-screen pb-20 no-select" oncontextmenu="return false;">
+
+  <!-- NAVEGAÇÃO SUPERIOR -->
+  <nav class="w-full bg-slate-900/80 border-b border-slate-700 backdrop-blur-md sticky top-0 z-40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col md:flex-row justify-between items-center gap-4">
+          <!-- Logo Esquerdo -->
+          <img src="LogoMCE.png" alt="Miguel Camacaro Edições" class="h-14 md:h-16 object-contain bg-white rounded-lg p-1 drop-shadow-md">
+          
+          <!-- Links Centrais -->
+          <div class="flex items-center gap-4 md:gap-6 flex-wrap justify-center text-sm md:text-base font-semibold">
+              <a href="#apresentacao" class="text-slate-300 hover:text-white transition">CEAD 2026</a>
+              <a href="#autor" class="text-slate-300 hover:text-white transition">Autor & Convite</a>
+              <a href="#conferencias" class="text-slate-300 hover:text-white transition">Palestras</a>
+              <a href="#material" class="text-slate-300 hover:text-white transition">Material</a>
+              <a href="#videos-apoio" class="text-slate-300 hover:text-white transition">Vídeos de Apoio</a>
+              <a href="#auditoria" class="text-slate-300 hover:text-white transition">Auditoria Forense</a>
+          </div>
+
+          <!-- Logo Direito -->
+          <img src="LOGO EVMC.jpg" alt="Escola de Avaliação Miguel Camacaro" class="h-14 md:h-16 object-contain drop-shadow-md">
+      </div>
+  </nav>
+
+  <!-- SEÇÃO HERO: APRESENTAÇÃO DO EVENTO -->
+  <header id="apresentacao" class="max-w-6xl mx-auto px-4 py-16 text-center">
+      <span class="inline-block bg-blue-600 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 shadow-sm">
+          Recife, Pernambuco | 21 a 25 de Setembro de 2026
+      </span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight font-[Cinzel]">
+          III Conferência de Engenharia <br> <span class="text-blue-400">de Avaliações e Diagnóstica</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
+          O CEAD 2026 reúne especialistas para discutir como a base técnica sustenta decisões, valoriza o patrimônio e constrói o futuro da engenharia diagnóstica e de avaliações..
+      </p>
+      <a href="https://cead2026.com.br/" target="_blank" class="inline-flex items-center gap-2 bg-slate-700 hover:bg-slate-600 border border-slate-500 text-white px-6 py-3 rounded-lg font-bold shadow-lg transition">
+          <i class="fa-solid fa-globe"></i> Site Oficial CEAD 2026
+      </a>
+  </header>
+
+  <!-- SEÇÃO AUTOR E CARTA DE CONVITE -->
+  <section id="autor" class="max-w-6xl mx-auto px-4 mb-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Perfil do Autor -->
+          <div class="bg-slate-800/80 border border-slate-700 rounded-2xl shadow-xl p-8 flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
+              <img src="Imagen final.png" alt="Prof. Miguel Camacaro" class="w-32 h-32 md:w-44 md:h-44 rounded-full object-cover shadow-lg border-4 border-slate-600">
+              <div>
+                  <h2 class="text-2xl font-bold text-white mb-1">Prof. Eng. Miguel Camacaro Pérez</h2>
+                  <h3 class="text-blue-400 font-semibold mb-4 text-sm">Palestrante Convidado M.Sc.</h3>
+                  <p class="text-slate-300 text-sm leading-relaxed mb-3">
+                      Engenheiro Civil e Especialista em Avaliação de Ativos com mais de 40 anos de trajetória profissional. Professor universitário de estatística e econometria.
+                  </p>
+                  <p class="text-slate-300 text-sm leading-relaxed">
+                      Pioneiro internacional na integração da Ciência de Dados, Modelagem Econométrica e Inteligência Artificial Generativa (Prompt Engineering) aplicada à engenharia de avaliações.
+                  </p>
+              </div>
+          </div>
+
+          <!-- Carta de Convite -->
+          <div class="bg-slate-800/80 border border-slate-700 rounded-2xl shadow-xl p-8 flex flex-col justify-center items-center text-center">
+              <div class="bg-amber-900/40 text-amber-400 w-16 h-16 rounded-full flex items-center justify-center text-3xl mb-4 border border-amber-700/50">
+                  <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <h2 class="text-xl font-bold text-white mb-3">Carta de Convite Oficial</h2>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6 max-w-sm">
+                  Documento oficial de convite emitido pelo comitê organizador da III Conferência de Engenharia de Avaliações e Diagnóstica (CEAD).
+              </p>
+              <button onclick="abrirDocumento('ConviteMCamacaro.pdf', 'Carta de Convite - CEAD 2026')" class="bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-lg font-bold shadow-lg transition w-full sm:w-auto flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-file-pdf"></i> Visualizar Convite
+              </button>
+          </div>
+      </div>
+  </section>
+
+  <!-- SEÇÃO CONFERÊNCIAS E VÍDEOS DE APOIO -->
+  <section id="conferencias" class="max-w-6xl mx-auto px-4 mb-20 scroll-mt-24">
+      <h2 class="text-3xl font-bold text-white mb-8 text-center font-[Cinzel]"><i class="fa-solid fa-microphone-lines text-blue-500 mr-3"></i>Painel e Palestra</h2>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- PAINEL -->
+          <div class="bg-slate-800/80 border border-slate-700 rounded-2xl shadow-xl overflow-hidden flex flex-col">
+              <div class="p-6 border-b border-slate-700">
+                  <span class="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2 block"><i class="fa-solid fa-calendar-day mr-1"></i> 23 de Setembro de 2026</span>
+                  <h3 class="text-xl font-bold text-white mb-4">Painel: IA aplicada à inspeção e avaliação</h3>
+                  <button onclick="abrirDocumento('Painel23092026.pdf', 'Documento do Painel')" class="w-full bg-slate-700 hover:bg-slate-600 text-white border border-slate-500 px-4 py-2 rounded font-bold shadow transition flex items-center justify-center gap-2">
+                      <i class="fa-solid fa-file-pdf text-red-400"></i> Abrir Apresentação (PDF)
+                  </button>
+              </div>
+              <div class="bg-slate-900 aspect-video relative flex items-center justify-center overflow-hidden group">
+                  <img src="Palestra23092026.jpg" alt="Painel IA aplicada" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                  <a href="https://youtu.be/M03UQ6oMtsk" target="_blank" class="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/20 transition group">
+                      <i class="fa-brands fa-youtube text-6xl text-red-600 drop-shadow-[0_0_15px_rgba(255,0,0,0.8)] group-hover:scale-110 transition-transform"></i>
+                  </a>
+              </div>
+          </div>
+
+          <!-- PALESTRA -->
+          <div class="bg-slate-800/80 border border-slate-700 rounded-2xl shadow-xl overflow-hidden flex flex-col">
+              <div class="p-6 border-b border-slate-700">
+                  <span class="text-xs font-bold uppercase tracking-wider text-blue-400 mb-2 block"><i class="fa-solid fa-calendar-day mr-1"></i> 24 de Setembro de 2026</span>
+                  <h3 class="text-xl font-bold text-white mb-4">Palestra Magistral: Auditoria Forense com Gemini</h3>
+                  <button onclick="abrirDocumento('Palestra24092026.pdf', 'Documento da Palestra')" class="w-full bg-slate-700 hover:bg-slate-600 text-white border border-slate-500 px-4 py-2 rounded font-bold shadow transition flex items-center justify-center gap-2">
+                      <i class="fa-solid fa-file-pdf text-red-400"></i> Abrir Apresentação (PDF)
+                  </button>
+              </div>
+              <div class="bg-slate-900 aspect-video relative flex items-center justify-center overflow-hidden group">
+                  <img src="Palestra24092026.jpg" alt="Palestra Auditoria Forense" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                  <a href="https://youtu.be/blexICJvtuc" target="_blank" class="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/20 transition group">
+                      <i class="fa-brands fa-youtube text-6xl text-red-600 drop-shadow-[0_0_15px_rgba(255,0,0,0.8)] group-hover:scale-110 transition-transform"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- MATERIAL DE CONSULTA (ACORDEÕES) -->
+  <section id="material" class="max-w-6xl mx-auto px-4 mb-20 scroll-mt-24">
+      <h2 class="text-3xl font-bold text-white mb-8 text-center font-[Cinzel]"><i class="fa-solid fa-folder-open text-blue-500 mr-3"></i>Material de Consulta</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Acordeão: IA & PROPTECH -->
+          <details class="bg-slate-800/80 border border-slate-700 rounded-xl shadow-lg overflow-hidden group h-fit">
+              <summary class="flex justify-between items-center p-5 cursor-pointer bg-slate-800 hover:bg-slate-700 transition">
+                  <div class="flex items-center gap-4">
+                      <div class="bg-indigo-900/50 text-indigo-400 w-10 h-10 rounded-lg flex items-center justify-center text-lg"><i class="fa-solid fa-microchip"></i></div>
+                      <h3 class="text-lg font-bold text-white">Inteligência Artificial & PropTech</h3>
+                  </div>
+                  <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300 icono-flecha"></i>
+              </summary>
+              <div class="p-4 bg-slate-900/50 border-t border-slate-700 flex flex-col gap-2">
+                  <button onclick="abrirDocumento('Explainable_PropTech_AI.pdf', 'Explainable PropTech AI')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-indigo-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-indigo-400 text-xl"></i><span class="text-sm">Explainable PropTech AI</span></button>
+                  <button onclick="abrirDocumento('ImplementacionViT.pdf', 'Implementação ViT')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-indigo-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-indigo-400 text-xl"></i><span class="text-sm">Implementación ViT</span></button>
+                  <button onclick="abrirDocumento('The_Transparent_Property_AI_Blueprint.pdf', 'Transparent Property AI Blueprint')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-indigo-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-indigo-400 text-xl"></i><span class="text-sm">The Transparent Property AI Blueprint</span></button>
+                  <button onclick="abrirDocumento('Visual_Intelligence_in_PropTech.pdf', 'Visual Intelligence in PropTech')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-indigo-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-indigo-400 text-xl"></i><span class="text-sm">Visual Intelligence in PropTech</span></button>
+                  <button onclick="abrirDocumento('IVS104105 IA + AVM.pdf', 'IVS 104-105 IA + AVM')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-indigo-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-indigo-400 text-xl"></i><span class="text-sm">IVS 104/105: IA + AVM</span></button>
+              </div>
+          </details>
+
+          <!-- Acordeão: NORMAS NACIONAIS E INTERNACIONAIS -->
+          <details class="bg-slate-800/80 border border-slate-700 rounded-xl shadow-lg overflow-hidden group h-fit">
+              <summary class="flex justify-between items-center p-5 cursor-pointer bg-slate-800 hover:bg-slate-700 transition">
+                  <div class="flex items-center gap-4">
+                      <div class="bg-emerald-900/50 text-emerald-400 w-10 h-10 rounded-lg flex items-center justify-center text-lg"><i class="fa-solid fa-scale-balanced"></i></div>
+                      <h3 class="text-lg font-bold text-white">Normas e Regulamentos</h3>
+                  </div>
+                  <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300 icono-flecha"></i>
+              </summary>
+              <div class="p-4 bg-slate-900/50 border-t border-slate-700 flex flex-col gap-2 max-h-[400px] overflow-y-auto">
+                  <button onclick="abrirDocumento('IVS_2025.pdf', 'IVS 2025')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">IVS 2025</span></button>
+                  <button onclick="abrirDocumento('IVS_effective-31-January-2028-Exposure-Draft-Final.pdf', 'IVS Exposure Draft 2028')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">IVS Exposure Draft 2028</span></button>
+                  <button onclick="abrirDocumento('IVS107_Control_Calidad_IVS2028.pdf', 'IVS 107 - Controle de Qualidade 2028')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">IVS 107 Controle de Qualidade (2028)</span></button>
+                  <button onclick="abrirDocumento('NBR 14653-1.pdf', 'ABNT NBR 14653-1')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">ABNT NBR 14653-1</span></button>
+                  <button onclick="abrirDocumento('NBR 14653-2.pdf', 'ABNT NBR 14653-2')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">ABNT NBR 14653-2</span></button>
+                  <button onclick="abrirDocumento('EVS-BV 2026.pdf', 'EVS-BV 2026')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">EVS-BV 2026</span></button>
+                  <button onclick="abrirDocumento('EAA-AVM.pdf', 'EAA-AVM')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">EAA-AVM</span></button>
+                  <button onclick="abrirDocumento('IPMS.pdf', 'IPMS')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">IPMS (Medição)</span></button>
+                  <button onclick="abrirDocumento('AEV-IPMS.pdf', 'AEV-IPMS')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">AEV-IPMS</span></button>
+                  <button onclick="abrirDocumento('RB-RICS.pdf', 'RICS Red Book')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">RB-RICS (Red Book)</span></button>
+                  <button onclick="abrirDocumento('RICS - AI.pdf', 'RICS AI Guidelines')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">RICS - Diretrizes de IA</span></button>
+                  <button onclick="abrirDocumento('BOE-A-2025.pdf', 'BOE-A-2025')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-emerald-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-emerald-400 text-xl"></i><span class="text-sm">BOE-A-2025</span></button>
+              </div>
+          </details>
+      </div>
+  </section>
+
+  <!-- VÍDEOS DE APOIO -->
+  <section id="videos-apoio" class="max-w-6xl mx-auto px-4 mb-20 scroll-mt-24">
+      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl shadow-xl p-8 md:p-10">
+          <h2 class="text-3xl font-bold text-white mb-6 border-b border-slate-700 pb-4 font-[Cinzel] flex items-center">
+              <i class="fa-brands fa-youtube text-red-500 mr-4 text-4xl"></i> Vídeos de Apoio
+          </h2>
+          <p class="text-slate-400 mb-6">Acesse o conteúdo audiovisual complementar preparado para aprofundar os temas da inferência estatística, normas e análise de mercado.</p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 max-h-[600px] overflow-y-auto pr-4">
+              <a href="https://youtu.be/ZeUSjc3ghYc" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">A avaliação imobiliária impulsionada pela inteligência artificial</span></a>
+              <a href="https://youtu.be/XtRmbMN6haw" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">A Lente Digital: Visão Computacional na Avaliação Imobiliária</span></a>
+              <a href="https://youtu.be/dvzsO3yFocs" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">A Revolução da Avaliação Imobiliária com IA</span></a>
+              <a href="https://youtu.be/J1JdK4Y011A" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">A Revolução dos Vision-Language Models no Real Estate</span></a>
+              <a href="https://youtu.be/-qwYF2306ZI" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">A Visão Computacional no Setor Imobiliário</span></a>
+              <a href="https://youtu.be/o2eLD3lt3ko" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Análise comparativo MRLM vs. XGBoost + SHAP [Valuación de inmuebles]</span></a>
+              <a href="https://youtu.be/7i74UrnauTE" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Como a IA avalia o seu imóvel?</span></a>
+              <a href="https://youtu.be/smE2b9RlW8A" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Due Diligence</span></a>
+              <a href="https://youtu.be/lGrN6Tn_8Kg" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">El Fin de la Era Tabular: La Revolución de la Inteligencia Visual</span></a>
+              <a href="https://youtu.be/FYlmZ_6nbsQ" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Guia Essencial: NBR 14653-1 / O Guia Definitivo</span></a>
+              <a href="https://youtu.be/KQt6pJk1uew" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Guia Essencial: NBR 14653-2 / Avaliação de Imóveis Urbanos</span></a>
+              <a href="https://youtu.be/aeiV3oj0iKQ" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Guia Essencial: NBR 14653-3 / Avaliação de Imóveis Rurais</span></a>
+              <a href="https://youtu.be/kA-j6qO-18g" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Guia Essencial: NBR 14653-4 / Avaliação de Empreendimentos</span></a>
+              <a href="https://youtu.be/5FVOqbc4UyU" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Guia Essencial: NBR 14653-5 / Avaliação de Bens Industriais</span></a>
+              <a href="https://youtu.be/zVcQ8oeTkpU" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Guia Essencial: NBR 14653-6 / Recursos naturais e ambientais</span></a>
+              <a href="https://youtu.be/ZmhHP_P2HcM" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Guia Essencial: NBR 14653-7 / Patrimônios históricos e artísticos</span></a>
+              <a href="https://youtu.be/Cva36lsDKeM" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Guia Essencial: NBR 17170:2022 / Garantias de edificações</span></a>
+              <a href="https://www.youtube.com/watch?v=LxBiMUO6W1E" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Implementación de Vision Transformers (ViT) en Modelos Automatizados de Valuación (AVM)</span></a>
+              <a href="https://youtu.be/AlE0pE5sd1o" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">O ebook da Avaliação Imobiliária</span></a>
+              <a href="https://youtu.be/GfTzDcM5G78" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">O estado da arte da Inteligência Artificial Explicável XAI</span></a>
+              <a href="https://youtu.be/5Ycloc1aqVU" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">O livro de Heideck: publicação que transformou a avaliação</span></a>
+              <a href="https://youtu.be/qbCbbEnWd2M" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-microphone-lines text-blue-400 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Podcast - O Livro de Heideck: Uma Revelação</span></a>
+              <a href="https://youtu.be/DNct2RjxpXw" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-microphone-lines text-blue-400 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Podcast - Uma história surpreendente para a ciencia</span></a>
+              <a href="https://youtu.be/q4CI7uwZ3tI" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">RICS & IA O Novo Padrão</span></a>
+              <a href="https://youtu.be/GtpDPA2lA7A" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Valuación Aumentada con NotebookLM - Clase 1</span></a>
+              <a href="https://youtu.be/7eX8_i21yww" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Valuación Aumentada con NotebookLM - Clase 2</span></a>
+              <a href="https://youtu.be/L3HLPSLeOVA" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Valuación Aumentada con NotebookLM - Clase 3</span></a>
+              <a href="https://youtu.be/Xt_Lm8_49HY" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">Valuación Aumentada con NotebookLM [Mayo 2026]</span></a>
+              <a href="https://www.youtube.com/watch?v=mZcDhBufPP4" target="_blank" class="flex items-start gap-3 hover:bg-slate-700 p-2 rounded transition border border-transparent hover:border-slate-600"><i class="fa-solid fa-circle-play text-red-500 mt-1"></i><span class="text-sm font-medium text-slate-300 hover:text-white">XGBoost + XAI</span></a>
+          </div>
+      </div>
+  </section>
+
+  <!-- AUDITORIA FORENSE E RAG (ACORDEÕES) -->
+  <section id="auditoria" class="max-w-6xl mx-auto px-4 mb-20 scroll-mt-24">
+      <h2 class="text-3xl font-bold text-white mb-4 text-center font-[Cinzel]"><i class="fa-solid fa-magnifying-glass-chart text-red-500 mr-3"></i>Auditoria Forense & Otimização RAG</h2>
+      
+      <!-- EXPLICACION RAG -->
+      <div class="bg-indigo-900/30 border border-indigo-500/50 p-6 rounded-2xl mb-8 max-w-4xl mx-auto text-center shadow-lg">
+          <h3 class="text-lg font-bold text-indigo-300 mb-2"><i class="fa-solid fa-brain mr-2"></i>A Importância da Nomenclatura na IA (RAG)</h3>
+          <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+              Nesta seção, o material foi intencionalmente dividido em dois grupos. O objetivo é demonstrar na prática que o uso de uma <strong>Nomenclatura Estruturada (Taxonomia e Hub & Spoke)</strong> otimiza drasticamente a precisão, o contexto e a qualidade da recuperação de dados em consultas RAG (<em>Retrieval-Augmented Generation</em>) por modelos de Inteligência Artificial, quando comparado a nomes convencionais.
+          </p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          
+          <!-- Acordeão: GRUPO 1: CONVENCIONAL -->
+          <details class="bg-slate-800/80 border border-slate-700 rounded-xl shadow-lg overflow-hidden group h-fit">
+              <summary class="flex justify-between items-center p-5 cursor-pointer bg-slate-800 hover:bg-slate-700 transition">
+                  <div class="flex items-center gap-4">
+                      <div class="bg-slate-600/50 text-slate-300 w-10 h-10 rounded-lg flex items-center justify-center text-lg"><i class="fa-solid fa-folder"></i></div>
+                      <h3 class="text-lg font-bold text-white">1. Grupo: Arquivos Convencionais</h3>
+                  </div>
+                  <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300 icono-flecha"></i>
+              </summary>
+              <div class="p-4 bg-slate-900/50 border-t border-slate-700 flex flex-col gap-1 max-h-[500px] overflow-y-auto">
+                  <p class="text-xs text-slate-400 mb-3 border-b border-slate-700 pb-2">Arquivos sem taxonomia, para demonstrar as limitações na recuperação de dados pela IA.</p>
+                  
+                  <button onclick="abrirDocumento('Data de mercado.pdf', 'Dados de Mercado')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Dados de Mercado</span></button>
+                  <button onclick="abrirDocumento('Diagnostico de Mercado.pdf', 'Diagnóstico de Mercado')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Diagnóstico de Mercado</span></button>
+                  <button onclick="abrirDocumento('Documento de propiedad.pdf', 'Documento de Propriedade')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Documento de Propriedade</span></button>
+                  <button onclick="abrirDocumento('Espacios del inmueble.pdf', 'Espaços do Imóvel')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Espaços do Imóvel</span></button>
+                  <button onclick="abrirDocumento('Estadistica Descriptiva.pdf', 'Estatística Descritiva')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Estatística Descritiva</span></button>
+                  <button onclick="abrirDocumento('Factores ESG.pdf', 'Fatores ESG')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Fatores ESG</span></button>
+                  <button onclick="abrirDocumento('Ficha Catastral.pdf', 'Ficha Cadastral')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Ficha Cadastral</span></button>
+                  <button onclick="abrirDocumento('Ficha de construccion.pdf', 'Ficha de Construção')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Ficha de Construção</span></button>
+                  <button onclick="abrirDocumento('Fotografias del inmueble.pdf', 'Fotografias do Imóvel')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Fotografias do Imóvel</span></button>
+                  <button onclick="abrirDocumento('Honorarios profesionales.pdf', 'Honorários Profissionais')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Honorários Profissionais</span></button>
+                  <button onclick="abrirDocumento('Inferencia Estadistica.pdf', 'Inferência Estatística')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Inferência Estatística</span></button>
+                  <button onclick="abrirDocumento('Informe de valuacion.pdf', 'Relatório de Avaliação')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Relatório de Avaliação</span></button>
+                  <button onclick="abrirDocumento('Linderos y superficie.pdf', 'Limites e Superfície')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Limites e Superfície</span></button>
+                  <button onclick="abrirDocumento('Metodo Contributivo.pdf', 'Método Contributivo')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Método Contributivo</span></button>
+                  <button onclick="abrirDocumento('Normas ABNT NBR_14653.pdf', 'Normas ABNT NBR 14653')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Normas ABNT NBR 14653</span></button>
+                  <button onclick="abrirDocumento('Normas EVS 2025.pdf', 'Normas EVS 2025')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Normas EVS 2025</span></button>
+                  <button onclick="abrirDocumento('Normas IPMS_All_Building.pdf', 'Normas IPMS All Building')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Normas IPMS All Building</span></button>
+                  <button onclick="abrirDocumento('Normas IVS_2025.pdf', 'Normas IVS 2025')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Normas IVS 2025</span></button>
+                  <button onclick="abrirDocumento('Normas RICS Redbook.pdf', 'Normas RICS Redbook')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Normas RICS Redbook</span></button>
+                  <button onclick="abrirDocumento('Normas RICS sobre AI.pdf', 'Normas RICS sobre AI')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Normas RICS sobre AI</span></button>
+                  <button onclick="abrirDocumento('Plano de Zonificacion.pdf', 'Plano de Zoneamento')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Plano de Zoneamento</span></button>
+                  <button onclick="abrirDocumento('Registro Mercantil.pdf', 'Registro Mercantil')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Registro Mercantil</span></button>
+                  <button onclick="abrirDocumento('Solicitud del avaluo.pdf', 'Solicitação da Avaliação')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Solicitação da Avaliação</span></button>
+                  <button onclick="abrirDocumento('Titulo supletorio.pdf', 'Título Supletório')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Título Supletório</span></button>
+                  <button onclick="abrirDocumento('Zonificacion urbana.pdf', 'Zoneamento Urbano')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Zoneamento Urbano</span></button>
+              </div>
+          </details>
+
+          <!-- Acordeão: GRUPO 2: TAXONOMIA HAS -->
+          <details class="bg-slate-800/80 border border-slate-700 rounded-xl shadow-lg overflow-hidden group h-fit">
+              <summary class="flex justify-between items-center p-5 cursor-pointer bg-slate-800 hover:bg-slate-700 transition">
+                  <div class="flex items-center gap-4">
+                      <div class="bg-amber-900/50 text-amber-400 w-10 h-10 rounded-lg flex items-center justify-center text-lg"><i class="fa-solid fa-sitemap"></i></div>
+                      <h3 class="text-lg font-bold text-white">2. Grupo: Taxonomia Hub & Spoke</h3>
+                  </div>
+                  <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300 icono-flecha"></i>
+              </summary>
+              <div class="p-4 bg-slate-900/50 border-t border-slate-700 flex flex-col gap-4 max-h-[500px] overflow-y-auto">
+                  <p class="text-xs text-amber-400 mb-1">Arquivos rigorosamente classificados para a otimização de consultas RAG.</p>
+                  
+                  <!-- Grupo CYA -->
+                  <div>
+                      <h4 class="text-amber-400 font-bold mb-2 text-xs uppercase tracking-wider border-b border-slate-700 pb-1"><i class="fa-solid fa-chart-pie mr-1"></i> [CYA] Contexto e Análise</h4>
+                      <div class="flex flex-col gap-1">
+                          <button onclick="abrirDocumento('[CYA][C]Diag_Merc.pdf', '[CYA] Diag_Merc')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Diag_Merc</span></button>
+                          <button onclick="abrirDocumento('[CYA][C]Est_Desc.pdf', '[CYA] Est_Desc')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Est_Desc</span></button>
+                          <button onclick="abrirDocumento('[CYA][C]Facts_ESG.pdf', '[CYA] Facts_ESG')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Facts_ESG</span></button>
+                          <button onclick="abrirDocumento('[CYA][C]Infer_Estad.pdf', '[CYA] Infer_Estad')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Infer_Estad</span></button>
+                          <button onclick="abrirDocumento('[CYA][C]Met_Cont.pdf', '[CYA] Met_Cont')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Met_Cont</span></button>
+                      </div>
+                  </div>
+
+                  <!-- Grupo DYM -->
+                  <div>
+                      <h4 class="text-amber-400 font-bold mb-2 text-xs uppercase tracking-wider border-b border-slate-700 pb-1"><i class="fa-solid fa-ruler-combined mr-1"></i> [DYM] Dados e Medições</h4>
+                      <div class="flex flex-col gap-1">
+                          <button onclick="abrirDocumento('[DYM][D]Data_Merc.pdf', '[DYM] Data_Merc')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Data_Merc</span></button>
+                          <button onclick="abrirDocumento('[DYM][D]Espacios.pdf', '[DYM] Espacios')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Espacios</span></button>
+                          <button onclick="abrirDocumento('[DYM][D]Ficha_Const.pdf', '[DYM] Ficha_Const')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Ficha_Const</span></button>
+                          <button onclick="abrirDocumento('[DYM][D]Fotos.pdf', '[DYM] Fotos')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Fotos</span></button>
+                          <button onclick="abrirDocumento('[DYM][D]Lin_Cab.pdf', '[DYM] Lin_Cab')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Lin_Cab</span></button>
+                      </div>
+                  </div>
+
+                  <!-- Grupo LEG -->
+                  <div>
+                      <h4 class="text-amber-400 font-bold mb-2 text-xs uppercase tracking-wider border-b border-slate-700 pb-1"><i class="fa-solid fa-file-contract mr-1"></i> [LEG] Legal</h4>
+                      <div class="flex flex-col gap-1">
+                          <button onclick="abrirDocumento('[LEG][D] Fic_Cat.pdf', '[LEG] Fic_Cat')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Fic_Cat</span></button>
+                          <button onclick="abrirDocumento('[LEG][P] Propiedad.pdf', '[LEG] Propiedad')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Propiedad</span></button>
+                          <button onclick="abrirDocumento('[LEG][P]R_mercantil.pdf', '[LEG] R_mercantil')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">R_mercantil</span></button>
+                          <button onclick="abrirDocumento('[LEG][P]Supletorio.pdf', '[LEG] Supletorio')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Supletorio</span></button>
+                      </div>
+                  </div>
+
+                  <!-- Grupo RYE -->
+                  <div>
+                      <h4 class="text-amber-400 font-bold mb-2 text-xs uppercase tracking-wider border-b border-slate-700 pb-1"><i class="fa-solid fa-book-bookmark mr-1"></i> [RYE] Regulações</h4>
+                      <div class="flex flex-col gap-1">
+                          <button onclick="abrirDocumento('[RYE] [R]IPMS_All.pdf', '[RYE] IPMS_All')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">IPMS_All</span></button>
+                          <button onclick="abrirDocumento('[RYE][R] EVS 2025.pdf', '[RYE] EVS 2025')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">EVS 2025</span></button>
+                          <button onclick="abrirDocumento('[RYE][R]Honor$.pdf', '[RYE] Honor$')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Honor$</span></button>
+                          <button onclick="abrirDocumento('[RYE][R]IVS_2025.pdf', '[RYE] IVS_2025')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">IVS_2025</span></button>
+                          <button onclick="abrirDocumento('[RYE][R]NBR_14653.pdf', '[RYE] NBR_14653')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">NBR_14653</span></button>
+                          <button onclick="abrirDocumento('[RYE][R]Plano_Zonif.pdf', '[RYE] Plano_Zonif')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Plano_Zonif</span></button>
+                          <button onclick="abrirDocumento('[RYE][R]RICS_AI.pdf', '[RYE] RICS_AI')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">RICS_AI</span></button>
+                          <button onclick="abrirDocumento('[RYE][R]RICS_Redb.pdf', '[RYE] RICS_Redb')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">RICS_Redb</span></button>
+                          <button onclick="abrirDocumento('[RYE][R]Zonif_on.pdf', '[RYE] Zonif_on')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Zonif_on</span></button>
+                      </div>
+                  </div>
+
+                  <!-- Grupo VAL -->
+                  <div>
+                      <h4 class="text-amber-400 font-bold mb-2 text-xs uppercase tracking-wider border-b border-slate-700 pb-1"><i class="fa-solid fa-calculator mr-1"></i> [VAL] Avaliação</h4>
+                      <div class="flex flex-col gap-1">
+                          <button onclick="abrirDocumento('[VAL] [P]Informe_Val.pdf', '[VAL] Informe_Val')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Informe_Val</span></button>
+                          <button onclick="abrirDocumento('[VAL][P]Solicitud.pdf', '[VAL] Solicitud')" class="flex items-center gap-2 p-2 bg-slate-800 hover:bg-amber-900/40 border border-slate-700 rounded transition text-left"><i class="fa-solid fa-file-pdf text-slate-400"></i><span class="text-sm">Solicitud</span></button>
+                      </div>
+                  </div>
+              </div>
+          </details>
+
+          <!-- Acordeão: PROMPTS -->
+          <details class="bg-slate-800/80 border border-slate-700 rounded-xl shadow-lg overflow-hidden group h-fit">
+              <summary class="flex justify-between items-center p-5 cursor-pointer bg-slate-800 hover:bg-slate-700 transition">
+                  <div class="flex items-center gap-4">
+                      <div class="bg-blue-900/50 text-blue-400 w-10 h-10 rounded-lg flex items-center justify-center text-lg"><i class="fa-solid fa-terminal"></i></div>
+                      <h3 class="text-lg font-bold text-white">Engenharia de Prompts</h3>
+                  </div>
+                  <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300 icono-flecha"></i>
+              </summary>
+              <div class="p-4 bg-slate-900/50 border-t border-slate-700 flex flex-col gap-2">
+                  <button onclick="abrirDocumento('5. Prompts Taxonomia-HAS.pdf', 'Prompts Taxonomia HAS')" class="flex items-center gap-3 p-4 bg-slate-800 hover:bg-blue-900/60 border border-slate-500 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-blue-400 text-2xl"></i><span class="text-sm font-bold text-white">5. Prompts Taxonomia-HAS</span></button>
+              </div>
+          </details>
+
+          <!-- Acordeão: RELATÓRIOS DE AUDITORIA -->
+          <details class="bg-slate-800/80 border border-slate-700 rounded-xl shadow-lg overflow-hidden group h-fit">
+              <summary class="flex justify-between items-center p-5 cursor-pointer bg-slate-800 hover:bg-slate-700 transition">
+                  <div class="flex items-center gap-4">
+                      <div class="bg-red-900/50 text-red-400 w-10 h-10 rounded-lg flex items-center justify-center text-lg"><i class="fa-solid fa-file-signature"></i></div>
+                      <h3 class="text-lg font-bold text-white">Relatórios de Auditoria</h3>
+                  </div>
+                  <i class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300 icono-flecha"></i>
+              </summary>
+              <div class="p-4 bg-slate-900/50 border-t border-slate-700 flex flex-col gap-2">
+                  <h4 class="text-red-400 font-bold mb-1 mt-2 text-xs uppercase tracking-wider pl-1">Informes Base</h4>
+                  <button onclick="abrirDocumento('1. Informe a revisar.pdf', '1. Informe a revisar')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-red-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-red-400 text-xl"></i><span class="text-sm">1. Informe a revisar</span></button>
+                  <button onclick="abrirDocumento('2. Presentacion Resultados.pdf', '2. Apresentação Resultados')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-red-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-red-400 text-xl"></i><span class="text-sm">2. Apresentação de Resultados</span></button>
+                  <button onclick="abrirDocumento('3. Comparativo Modelos.pdf', '3. Comparativo Modelos')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-red-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-red-400 text-xl"></i><span class="text-sm">3. Comparativo de Modelos</span></button>
+                  <button onclick="abrirDocumento('4. Auditoria Forense.pdf', '4. Auditoria Forense')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-red-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-red-400 text-xl"></i><span class="text-sm">4. Auditoria Forense</span></button>
+                  
+                  <hr class="border-slate-700 my-2">
+                  <h4 class="text-red-400 font-bold mb-1 text-xs uppercase tracking-wider pl-1">Estudos Regionais</h4>
+                  <button onclick="abrirDocumento('1. Informe a revisar.pdf', 'Informe Espanha')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-red-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-red-400 text-xl"></i><span class="text-sm">1. Informe Espanha</span></button>
+                  <button onclick="abrirDocumento('[VAL] [P]Informe_Val.pdf', 'Informe Venezuela')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-red-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-red-400 text-xl"></i><span class="text-sm">2. Informe Venezuela</span></button>
+                  <button onclick="abrirDocumento('3. Informe Brasil.pdf', 'Informe Brasil')" class="flex items-center gap-3 p-3 bg-slate-800 hover:bg-red-900/60 border border-slate-700 rounded-lg transition text-left w-full"><i class="fa-solid fa-file-pdf text-red-400 text-xl"></i><span class="text-sm">3. Informe Brasil</span></button>
+              </div>
+          </details>
+
+      </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="w-full bg-slate-900 border-t border-slate-700 py-8 text-center relative z-10">
+      <p class="text-slate-400 font-medium text-sm mb-4">
+          &copy; 2026 Miguel Camacaro Ediciones. Todos os direitos reservados.
+      </p>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- VISUALIZADOR MODAL DE PDF (TELA CHEIA)       -->
+  <!-- ========================================== -->
+  <div id="visor-modal" class="fixed inset-0 z-50 bg-slate-900/95 hidden flex-col transition-opacity duration-300">
+      <!-- Cabeçalho do visualizador -->
+      <div class="flex justify-between items-center px-6 py-4 bg-slate-800 border-b border-slate-700 shadow-lg">
+          <h3 id="visor-titulo" class="text-white font-bold text-lg md:text-xl flex items-center">
+              <i class="fa-solid fa-file-pdf text-blue-400 mr-3"></i> <span>Documento</span>
+          </h3>
+          <button onclick="fecharVisorModal()" class="text-slate-400 hover:text-red-500 transition focus:outline-none" title="Fechar Visualizador">
+              <i class="fa-solid fa-xmark text-3xl"></i>
+          </button>
+      </div>
+      <!-- Container do Iframe -->
+      <div class="flex-1 w-full h-full relative bg-slate-800 p-2 md:p-6">
+          <iframe id="visor-iframe" class="w-full h-full rounded shadow-2xl bg-white" src="" title="Visualizador de PDF"></iframe>
+      </div>
+  </div>
+
+  <!-- SCRIPT DO VISUALIZADOR MODAL -->
+  <script>
+      const modal = document.getElementById('visor-modal');
+      const iframe = document.getElementById('visor-iframe');
+      const titulo = document.querySelector('#visor-titulo span');
+
+      function abrirDocumento(rutaArchivo, nombreDocumento) {
+          titulo.innerText = nombreDocumento;
+          iframe.src = rutaArchivo + "#toolbar=0&navpanes=0&scrollbar=0";
+          
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+          
+          document.body.style.overflow = 'hidden'; 
+      }
+
+      function fecharVisorModal() {
+          iframe.src = "about:blank";
+          titulo.innerText = "Documento";
+          
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+          
+          document.body.style.overflow = 'auto'; 
+      }
+  </script>
+</body>
+</html>
